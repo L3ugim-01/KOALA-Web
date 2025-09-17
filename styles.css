@@ -1,0 +1,174 @@
+/* estilo general del body */
+body {
+  background-image: url(Fondo.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Barra superior */
+.top-bar {
+  background: #1c1c1c;
+  color: white;
+  text-align: center;
+  padding: 8px 0;
+  position: relative;
+  font-size: 14px;
+}
+
+/* flechas decorativas */
+.top-bar .arrow-left, 
+.top-bar .arrow-right {
+  position: absolute;
+  top: 50%; /* centrado vertical */
+  transform: translateY(-50%); /* para darle un ajuste fino */
+  font-size: 16px;
+  cursor: pointer; /* el cursor cambia cuando se pone encima */
+}
+
+.top-bar .arrow-left { left: 15px; }
+.top-bar .arrow-right { right: 15px; }
+
+/* Encabezado principal */
+header {
+  display: flex; /* elementos de fila */
+  justify-content: space-between; /* espaciados */
+  align-items: center; /* centrado vertical */
+  padding: 15px 40px;
+  background: rgba(255, 255, 255, 0.9);
+  border-bottom: 1px solid #ddd; /* linea inferior */
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #f77c6b;
+}
+
+/* menu de navegacion */
+nav {
+  flex: 1;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none; /*para quitar el subrayado */
+  color: black;
+  font-weight: bold;
+}
+
+/* iconos decorativos */
+.icons {
+  display: flex;
+  gap: 20px; /* espaciado entre iconos */
+  font-size: 20px;
+}
+
+.icons span { cursor: pointer; }
+
+/* Sección de precios */
+.pricing-section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+/* contenedor de tarjetas */
+.pricing-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px; /* espaciado entre tarjetas */
+  flex-wrap: wrap; /* salto en pantallas reducidas */
+}
+
+/* estilos de cada tarjeta */
+.pricing-card {
+  background: #f7f0e7;
+  padding: 20px;
+  border-radius: 8px; /* bordes redondeados */
+  width: 250px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* sombra */
+  transition: transform 0.3s ease; /* animacion */
+}
+
+.pricing-card:hover {
+  transform: scale(1.05); /* efecto de zoom */
+}
+
+/* encabezado de los contenedores */
+.pricing-card h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+/* precio */
+.price {
+  font-size: 28px;
+  color: red;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+/* texto de las tarjetas */
+.pricing-card p {
+  font-size: 14px;
+  color: #333;
+  margin: 8px 0;
+}
+
+/* linea divisoria */
+.pricing-card hr {
+  margin: 15px 0;
+}
+
+/* boton de accion */
+.btn {
+  display: inline-block;
+  background: #f77c6b;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  margin-top: 15px;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #d95c4d;
+}
+
+/* parrafo final (texto + imagen) */
+.info-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 80px;
+  background: rgba(255, 255, 255, 0.9);
+  margin: 50px auto;
+  max-width: 1100px;
+  border-radius: 10px;
+}
+
+.info-text {
+  flex: 1;
+  margin-right: 40px;
+}
+
+.info-text h2 {
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+
+.info-text p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* imagen decorativa */
+.info-image img {
+  max-width: 60%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
