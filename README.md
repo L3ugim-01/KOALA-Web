@@ -1,2 +1,2 @@
 # KOALA-Web
-Repositorio basico de aprendizaje 
+Repositorio del caso integrador de desarrollo web 
